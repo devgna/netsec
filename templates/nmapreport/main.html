@@ -255,11 +255,11 @@
 </ul>
 {% endif %}
 
-	{% block content %}
-	{% endblock %}
+<!-- 	{% block content %}
+	{% endblock %} -->
 
 	<!-- MODAL -->
-<!-- 	<div id="modal1" class="modal modal-fixed-footer">
+	<div id="modal1" class="modal modal-fixed-footer">
 		<div class="modal-content">
 			<h4 id="modaltitle">un titolo</h4>
 			<p id="modalbody">del testo</p>
@@ -267,8 +267,8 @@
 		<div class="modal-footer" id="modalfooter">
 			<a href="#!" class="modal-close waves-effect waves-green btn grey white-text">OK</a>
 		</div>
-		</div> -->
 		{% csrf_token %}
+	</div>
 
 
 	{{ cpestring|safe }}
