@@ -334,8 +334,7 @@ def index(request, filterservice="", filterportid=""):
 		r['auth'] = True
 
 	gitcmd = os.popen('cd /opt/nmapdashboard/nmapreport && git rev-parse --abbrev-ref HEAD')
-	r['netsecver'] = 'WebMap '+gitcmd.read()+'thank you'
-
+	
 	if 'scanfile' in request.session:
 		oo = xmltodict.parse(open('/opt/xml/'+request.session['scanfile'], 'r').read())
 		r['out2'] = json.dumps(oo['nmaprun'], indent=4)
